@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carlos Makin</title>
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1917'/%3E%3Ctext x='32' y='43' font-family='Georgia, serif' font-size='28' fill='%23f6f3ed' text-anchor='middle'%3ECM%3C/text%3E%3C/svg%3E">
+
+  <style>
+    @font-face {
+      font-family: 'Source Serif 4';
+      src: url('assets/fonts/source-serif-4-latin.woff2') format('woff2');
+      font-weight: 400 450;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Source Code Pro';
+      src: url('assets/fonts/source-code-pro-latin.woff2') format('woff2');
+      font-weight: 400 500;
+      font-display: swap;
+    }
+
+    :root {
+      color-scheme: light;
+      --bg: #f6f3ed;
+      --ink: #1a1917;
+      --body: #494640;
+      --muted: #726e68;
+      --hair: #e7e2d9;
+      --link: #14454f;
+      --link-hover: #1f5e6b;
+      --parchment: #efe6ce;
+      --serif: 'Source Serif 4', Georgia, serif;
+      --mono: 'Source Code Pro', ui-monospace, Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--body);
+      font-family: var(--serif);
+      font-synthesis: none;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: var(--link-hover);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    ::selection {
+      background: var(--parchment);
+      color: var(--ink);
+    }
+
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 72px 28px 96px;
+    }
+
+    .mono,
+    h2,
+    figcaption {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      line-height: 1.3;
+      color: var(--muted);
+    }
+
+    .mono,
+    h2 {
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .top {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 64px;
+    }
+
+    figure {
+      margin: 0 0 48px;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      border-radius: 10px;
+      display: block;
+    }
+
+    figcaption {
+      margin-top: 12px;
+    }
+
+    h1 {
+      font-size: 2.375rem;
+      font-weight: 450;
+      line-height: 1.15;
+      margin: 0 0 12px;
+    }
+
+    .prose {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      font-size: 1.125rem;
+      line-height: 1.65;
+      text-wrap: pretty;
+    }
+
+    .prose p {
+      margin: 0;
+    }
+
+    section {
+      margin-top: 64px;
+    }
+
+    h2 {
+      font-weight: 500;
+      border-top: 1px solid var(--hair);
+      padding-top: 20px;
+      margin: 0 0 20px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-family: var(--mono);
+      font-size: 0.875rem;
+      line-height: 1.3;
+      overflow-wrap: anywhere;
+    }
+
+    .links div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: baseline;
+    }
+
+    .links span {
+      color: var(--muted);
+      width: 9ch;
+      flex-shrink: 0;
+    }
+
+    .links a {
+      font-weight: 500;
+      flex-shrink: 0;
+      max-width: 100%;
+    }
+  </style>
+
+  <link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/source-code-pro-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta name="description" content="Carlos Makin — London, UK.">
+  <meta name="theme-color" content="#f6f3ed">
+
+  <link rel="canonical" href="https://www.makin.dev/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Carlos Makin">
+  <meta property="og:description" content="Carlos Makin — London, UK.">
+  <meta property="og:url" content="https://www.makin.dev/">
+  <meta property="og:image" content="https://www.makin.dev/assets/portrait.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="533">
+  <meta property="og:image:alt" content="Carlos Makin, smiling, on a flower-lined terrace at dusk">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Carlos Makin",
+      "url": "https://www.makin.dev/",
+      "jobTitle": "Software Engineer",
+      "sameAs": [
+        "https://github.com/carlosmakin",
+        "https://www.linkedin.com/in/carlosmakin"
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <main>
+
+    <header class="top">
+      <span class="mono">London, UK</span>
+    </header>
+
+    <figure>
+      <img src="assets/portrait.webp" alt="Carlos Makin, smiling, on a flower-lined terrace at dusk" width="800"
+        height="533" fetchpriority="high">
+      <figcaption>Córdoba, Spain.</figcaption>
+    </figure>
+
+    <h1>Carlos Makin</h1>
+
+    <div class="prose">
+      <p>I build software with a focus on simplicity, clarity, and durability.</p>
+
+      <p>Outside of work, I enjoy travel, photography, and nature.
+      </p>
+    </div>
+
+    <section>
+      <h2>Contact</h2>
+
+      <div class="links">
+        <div><span>email</span><a href="mailto:carlos@makin.dev">carlos@makin.dev</a></div>
+        <div><span>github</span><a href="https://github.com/carlosmakin">github.com/carlosmakin</a></div>
+        <div><span>linkedin</span><a href="https://www.linkedin.com/in/carlosmakin">linkedin.com/in/carlosmakin</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>
